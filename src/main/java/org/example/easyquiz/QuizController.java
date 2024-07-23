@@ -2,8 +2,13 @@ package org.example.easyquiz;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class QuizController {
 
@@ -66,6 +71,21 @@ public class QuizController {
         }
 
         if (counter == 4) {
+            try{
+                Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+                thisstage.close();
+
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("result.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.initStyle(StageStyle.TRANSPARENT);
+                scene.setFill(Color.TRANSPARENT);
+                stage.show();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
         } else {
             counter++;
@@ -97,6 +117,21 @@ public class QuizController {
         }
 
         if (counter == 4) {
+            try{
+                Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+                thisstage.close();
+
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("result.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.initStyle(StageStyle.TRANSPARENT);
+                scene.setFill(Color.TRANSPARENT);
+                stage.show();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
         } else {
             counter++;
@@ -113,6 +148,21 @@ public class QuizController {
         }
 
         if (counter == 4) {
+            try{
+                Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+                thisstage.close();
+
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("result.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.initStyle(StageStyle.TRANSPARENT);
+                scene.setFill(Color.TRANSPARENT);
+                stage.show();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
         } else {
             counter++;
@@ -129,6 +179,21 @@ public class QuizController {
         }
 
         if (counter == 4) {
+            try{
+                Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+                thisstage.close();
+
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("result.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                stage.initStyle(StageStyle.TRANSPARENT);
+                scene.setFill(Color.TRANSPARENT);
+                stage.show();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
         } else {
             counter++;
